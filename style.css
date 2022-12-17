@@ -1,0 +1,40 @@
+#email
+{
+    width:600px;
+    height:30px;
+}
+
+#pwd
+{
+    width:600px;
+    height:30px;
+}
+#btn
+{
+    width:150px;
+    height:30px;
+    background-color: white;
+}
+label{
+    margin:10px;
+}
+input
+{
+    margin:10px;
+}
+button{
+    margin:10px;
+}
+#message_email
+{
+    margin:10px;
+    
+}
+#message_password
+{
+    margin:10px;
+}
+#message
+{
+    margin:10px;
+}
