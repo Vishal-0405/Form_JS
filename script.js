@@ -5,12 +5,12 @@ let messageDiv=document.getElementById('message');
 emailInput.addEventListener("change",validate);
 passwordInput.addEventListener("change",validate)
 
-let messagemaildiv=document.getElementById('message_email');
-let messagepassworddiv=document.getElementById('message_password');
+let message_emaildiv=document.getElementById('message_email');
+let message_passworddiv=document.getElementById('message_password');
 
 emailInput.onchange=validate();
 passwordInput.onchange=validate();
-function geek()
+function xyz()
 {
    if(confirm()==true)
    {
@@ -19,8 +19,8 @@ function geek()
    if(confirm()==false)
    {
        emailInput.value="";
-       passwordInput.value=""
-       messageDiv.innerText=""
+       passwordInput.value="";
+       messageDiv.innerText="Kindly check your mail id,password!"
    }
    
 }
@@ -39,24 +39,19 @@ function validate()
        
         if(password != "" && password.length>8)
        {
-          
-            messageDiv.innerText="All good to go!";
-            messageDiv.style.color="green";
-           
-
-        messagemaildiv.innerText="";
-        messagepassworddiv.innerText="";
+          messageDiv.innerText="All good to go!";
+        messageDiv.style.color="green";
+        message_emaildiv.innerText="";
+        message_passworddiv.innerText="";
        
-       
-
-        }
+       }
         else{
            
-            messageDiv.innerText="";
-             messagemaildiv.innerText="Make sure email is more than 3 characters and has @ and a.";
-             messagemaildiv.style.color="red";
-             messagepassworddiv.innerText=" Make sure password is more than 8 characters.";
-             messagepassworddiv.style.color="red";
+            messageDiv.innerText="Email or password is invalid";
+             message_emaildiv.innerText="Make sure email is more than 3 characters and has @ and a.";
+             message_emaildiv.style.color="red";
+             message_passworddiv.innerText=" Make sure password is more than 8 characters.";
+             message_passworddiv.style.color="red";
      
              console.log("Email or password is invalid");
          }
@@ -73,8 +68,8 @@ function validate()
             messageDiv.style.color="green";
            
 
-        messagemaildiv.innerText="";
-        messagepassworddiv.innerText="";
+        message_emaildiv.innerText="";
+        message_passworddiv.innerText="";
       
        
 
@@ -82,16 +77,12 @@ function validate()
         else{
             
             messageDiv.innerText="";
-             messagemaildiv.innerText="Make sure email is more than 3 characters and has @ and a.";
-             messagemaildiv.style.color="red";
-             messagepassworddiv.innerText=" Make sure password is more than 8 characters.";
-             messagepassworddiv.style.color="red";
+             message_emaildiv.innerText="Make sure email is more than 3 characters and has @ and a.";
+             message_emaildiv.style.color="red";
+             message_passworddiv.innerText=" Make sure password is more than 8 characters.";
+             message_passworddiv.style.color="red";
      
              console.log("Email or password is invalid");
          }
-     
-    }
-
-    
-
+     }
 }
