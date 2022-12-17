@@ -81,7 +81,6 @@ function validate()
              message_emaildiv.style.color="red";
              message_passworddiv.innerText=" Make sure password is more than 8 characters.";
              message_passworddiv.style.color="red";
-     
              console.log("Email or password is invalid");
          }
      }
